@@ -34,12 +34,12 @@ const renderReport = (testDivId, func, report) => {
     return subContainer;
   };
 
-  container.appendChild(renderSection('h1', func.toString(), report));
+  container.appendChild(renderSection('h3', func.toString(), report));
 
   for (let subReport of report.log) {
     if (!subReport.describe) { continue }
 
-    container.appendChild(renderSection('h2', subReport.source, subReport));
+    container.appendChild(renderSection('h4', subReport.source, subReport));
   };
 
   document.getElementById(testDivId).appendChild(container);
