@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>mdning</title>
+  <meta charset="utf-8">
+  <link href="../style.css" rel="stylesheet" />
+  <link href="../dependencies/runnable/style.css" rel="stylesheet" />
+
+  <link href="../dependencies/codemirror/lib/codemirror.css" rel="stylesheet" />
+  <link href="../dependencies/codemirror/theme/eclipse.css" rel="stylesheet" />
+
+  <link href="../dependencies/prism/style.css" rel="stylesheet" />
+  <script src="../dependencies/prism/script.js"></script>
+
+
+  <script src="./index.js"></script>
+  <script src="./sandbox-code.js"></script>
+  <script>
+    window.onload = () => initializeDemo(sandboxCode);
+  </script>
+
+</head>
+
+<body>
+
+  <h1>name of function</h1>
+  <p>short description</p>
+
+  <div id="editor">
+  </div>
+
+  <div id="buttons">
+    <input id="in-here" type="button" value="Run Here" />
+    <input id="in-console" type="button" value="In Console" />
+    <input id="in-debugger" type="button" value="In Debugger" />
+    <input id="reset" type="button" value="Reset" />
+  </div>
+
+  <pre id="output"></pre>
+
+  <hr>
+
+  <h2>syntax</h2>
+  <code>asdf</code>
+
+  <h3>parameters</h3>
+  <ul>
+    <li>a</li>
+    <li>b</li>
+  </ul>
+
+  <h3>return value</h3>
+  <ul>
+    <li>a</li>
+    <li>b</li>
+  </ul>
+
+  <h2>description</h2>
+
+  <p>long description</p>
+
+  <h2>tests</h2>
+
+  <div id='tests'></div>
+
+  <script src="../dependencies/codemirror/lib/codemirror.min.js"></script>
+  <script src="../dependencies/codemirror/mode/javascript/javascript.js"></script>
+  <script src="../dependencies/codemirror/addon/selection/active-line.js"></script>
+
+  <script type="text/javascript" src="../dependencies/runnable/scripts.js"></script>
+
+
+  <script src="../dependencies/it-should/it-should.js"></script>
+  <script src="../dependencies/it-should/render-report.js"></script>
+  <script src="./spec.js"></script>
+
+</body>
+
+</html>
